@@ -9,13 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            ZStack {
+                Group {
+                    WebViewRepresentable()
+ 
+                }
+                 
+            }
+            .navigationBarTitle(Text("Urway"), displayMode: .inline)
+//            .navigationBarItems(leading: Button(action: {
+//               // webViewModel.shouldGoBack.toggle()
+//            }, label: {
+//                if webViewModel.canGoBack {
+//                    Image(systemName: "arrow.left")
+//                        .frame(width: 44, height: 44, alignment: .center)
+//                        .foregroundColor(.black)
+//                } else {
+//                    EmptyView()
+//                        .frame(width: 0, height: 0, alignment: .center)
+//                }
+//            })
+//            )
         }
-        .padding()
     }
 }
 
